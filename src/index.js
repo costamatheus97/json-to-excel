@@ -1,9 +1,7 @@
-const JsonToExcel = require('./functions/createFileBuffer') 
+const { createLocalFile } = require('./functions/createLocalFile')
+const { createWorkbook } = require('./functions/createWorkbook')
 
-const getBuffer = async (worksheetName, jsonData) => {
-	const buffer = await JsonToExcel.createFileBuffer(worksheetName, jsonData);
-
-	console.log(buffer)
+module.exports = {
+	createLocalFile,
+	createWorkbook
 }
-
-getBuffer('test', [{a: 1, b: 2}, {a: 3, b: 4, c: 5}])
