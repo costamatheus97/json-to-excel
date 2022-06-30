@@ -43,7 +43,7 @@ await createLocalFile("path/to/folder", "workbook-name", [
 ```js
 const { createWorkbook } = require("@costamatheus97/json-to-excel");
 
-const workbook = createWorkbook("workbook-name", [
+const workbook = await createWorkbook("workbook-name", [
   {
     name: "Matheus",
     age: 25,
