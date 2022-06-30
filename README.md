@@ -16,7 +16,7 @@
 ## Install
 
 ```sh
-yarn install
+yarn install @costamatheus97/json-to-excel
 ```
 
 ## Usage
